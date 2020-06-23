@@ -4,7 +4,7 @@ export default function Form(props) {
   const { initialValue, interests, installments } = props;
 
   const handleIntialValueChange = (e) => {
-    props.onInitialValueChange(e.target.value);
+    props.onInitialCapitalChange(e.target.value);
   };
   const handleInterestsChange = (e) => {
     props.onInterestsChange(e.target.value);
@@ -22,7 +22,7 @@ export default function Form(props) {
           id="initialValue"
           value={initialValue}
           onChange={handleIntialValueChange}
-          min="0"
+          min="100"
           max="100000"
           step="100"
         />
