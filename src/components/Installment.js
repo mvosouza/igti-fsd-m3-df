@@ -17,7 +17,7 @@ export default function Installment({ id, installment }) {
       : styles.interestRate.negative;
 
   return (
-    <div className="col s4 m3 l2">
+    <div className="col s4 m3">
       <div className="card-panel" style={styles.flexRow}>
         <span style={styles.identification}>{id}</span>
         <div style={styles.flexColumn}>
